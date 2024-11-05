@@ -75,12 +75,12 @@ section {
 }
 
 .project-image {
-    width: calc(100% - 30px); /* Largeur moins une marge */
+    width: calc(50% - 10px); /* Deux images côte à côte avec espace */
     height: auto;
     border-radius: 5px;
-    margin: 10px auto; /* Centrer avec une marge */
+    margin: 5px; /* Espacement autour des images */
     transition: transform 0.3s; /* Ajout d'un effet sur les images */
-    display: block; /* Permet de centrer */
+    display: inline-block; /* Permet d'afficher côte à côte */
 }
 
 .project-image:hover {
@@ -88,37 +88,14 @@ section {
 }
 
 video {
-    width: calc(100% - 30px); /* Largeur moins une marge */
+    width: 100%; /* Largeur complète mais ajustée dans les media queries */
+    max-width: 300px; /* Largeur maximale pour les vidéos */
     height: auto;
     margin: 10px auto; /* Centrer avec une marge */
     display: block; /* Permet de centrer */
 }
 
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Media Queries pour Responsivité */
 @media (min-width: 768px) {
     .header-content {
-        justify-content: flex-start; /* À gauche sur grands écrans */
-    }
-
-    .profile-photo {
-        margin-right: 30px; /* Plus d'espace entre la photo et le texte sur grands écrans */
-    }
-
-    nav ul {
-        margin-left: auto; /* Aligne le menu à droite */
-    }
-
-    section {
-        padding: 30px; /* Plus de padding sur les grands écrans */
-    }
-}
+      
