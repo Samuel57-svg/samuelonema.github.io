@@ -17,16 +17,16 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Alignement vertical centré */
+    justify-content: flex-start; /* Justifier à gauche */
     flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes si nécessaire */
 }
 
 .profile-photo {
-    width: 100px; /* Ajuster la taille de la photo */
+    width: 80px; /* Taille réduite de la photo de profil */
     height: auto;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 15px; /* Espacement entre la photo et le texte */
 }
 
 .header-text {
@@ -75,7 +75,7 @@ section {
 }
 
 .project-image {
-    width: calc(50% - 10px); /* Deux images côte à côte avec espace */
+    width: calc(25% - 10px); /* Ajustement pour que les images soient plus petites sur PC */
     height: auto;
     border-radius: 5px;
     margin: 5px; /* Espacement autour des images */
@@ -89,13 +89,33 @@ section {
 
 video {
     width: 100%; /* Largeur complète mais ajustée dans les media queries */
-    max-width: 300px; /* Largeur maximale pour les vidéos */
+    max-width: 250px; /* Largeur maximale pour les vidéos */
     height: auto;
     margin: 10px auto; /* Centrer avec une marge */
     display: block; /* Permet de centrer */
 }
 
 /* Media Queries pour Responsivité */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .header-content {
-      
+        justify-content: center; /* Centrer les éléments sur mobile */
+    }
+
+    .profile-photo {
+        margin-right: 10px; /* Moins d'espace entre la photo et le texte sur mobile */
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 30px; /* Plus de padding sur les grands écrans */
+    }
+
+    .project-image {
+        width: calc(20% - 10px); /* Ajustement pour que les images soient plus petites sur PC */
+    }
+
+    video {
+        max-width: 350px; /* Largeur maximale pour les vidéos sur grands écrans */
+    }
+}
