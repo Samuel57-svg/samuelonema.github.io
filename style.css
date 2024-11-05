@@ -115,3 +115,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Supprimer le soulignement des liens */
+a {
+    text-decoration: none; /* Enlève le soulignement */
+    color: #007bff; /* Couleur de votre choix pour les liens */
+}
+
+/* Couleur des liens au survol */
+a:hover {
+    color: #0056b3; /* Couleur au survol, changez selon vos préférences */
+}
