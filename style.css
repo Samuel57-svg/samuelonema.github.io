@@ -77,45 +77,4 @@ section {
 .project-image {
     width: calc(25% - 10px); /* Ajustement pour que les images soient plus petites sur PC */
     height: auto;
-    border-radius: 5px;
-    margin: 5px; /* Espacement autour des images */
-    transition: transform 0.3s; /* Ajout d'un effet sur les images */
-    display: inline-block; /* Permet d'afficher côte à côte */
-}
-
-.project-image:hover {
-    transform: scale(1.05); /* Effet d'agrandissement au survol */
-}
-
-video {
-    width: 100%; /* Largeur complète mais ajustée dans les media queries */
-    max-width: 250px; /* Largeur maximale pour les vidéos */
-    height: auto;
-    margin: 10px auto; /* Centrer avec une marge */
-    display: block; /* Permet de centrer */
-}
-
-/* Media Queries pour Responsivité */
-@media (max-width: 768px) {
-    .header-content {
-        justify-content: center; /* Centrer les éléments sur mobile */
-    }
-
-    .profile-photo {
-        margin-right: 10px; /* Moins d'espace entre la photo et le texte sur mobile */
-    }
-}
-
-@media (min-width: 768px) {
-    section {
-        padding: 30px; /* Plus de padding sur les grands écrans */
-    }
-
-    .project-image {
-        width: calc(20% - 10px); /* Ajustement pour que les images soient plus petites sur PC */
-    }
-
-    video {
-        max-width: 350px; /* Largeur maximale pour les vidéos sur grands écrans */
-    }
-}
+    border-radius: 5p
