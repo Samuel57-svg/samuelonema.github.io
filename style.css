@@ -1,3 +1,4 @@
+/* style.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,37 +8,59 @@ body {
 }
 
 header {
-    background: #35424a;
-    color: white;
-    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-h1 {
-    margin: 0;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-h2 {
-    color: #35424a;
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-section {
-    background: white;
-    margin: 20px;
+.about-me, .projects {
     padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin: 20px 0;
+    text-align: center;
 }
 
 .project-image {
     width: 100%;
-    max-width: 600px;
-    border-radius: 8px;
+    max-width: 400px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.responsive-video {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Ajuste la largeur maximale selon vos besoins */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #35424a;
-    color: white;
+    background: #333;
+    color: #fff;
 }
