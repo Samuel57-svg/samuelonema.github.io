@@ -64,16 +64,26 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Styles pour les images et vidéos */
 .project-image {
-    width: 100%;
+    width: calc(100% - 30px); /* Largeur moins une marge */
     height: auto;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 10px auto; /* Centrer avec une marge */
     transition: transform 0.3s; /* Ajout d'un effet sur les images */
+    display: block; /* Permet de centrer */
 }
 
 .project-image:hover {
     transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+/* Styles pour les vidéos */
+video {
+    width: calc(100% - 30px); /* Largeur moins une marge */
+    height: auto;
+    margin: 10px auto; /* Centrer avec une marge */
+    display: block; /* Permet de centrer */
 }
 
 footer {
