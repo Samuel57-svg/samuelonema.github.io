@@ -9,73 +9,82 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="images/ma_photo.jpg" alt="Photo de Samuel Onema" class="profile-photo">
+            <img src="images/photo.jpg" alt="Photo de Samuel Onema" class="profile-photo"> <!-- Assurez-vous d'avoir une photo ici -->
             <div class="header-text">
                 <h1>Samuel Onema</h1>
                 <p>Ingénieur Informaticien | Développeur Full Stack Junior</p>
+                <nav>
+                    <ul>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#realisation">Mes Réalisations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#projet-snel">Mes Réalisations</a></li>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="projet-snel">
-            <h2>Projet : Digitalisation des Documents pour la SNEL</h2>
-            <p>Ce projet visait à créer une application de gestion électronique des documents (GED) pour la Société Nationale d'Électricité (SNEL) en RDC.</p>
-            <h3>Description du Projet</h3>
-            <p>L’application a été développée pour digitaliser et sécuriser les documents d’entreprise, simplifier leur accès et leur stockage, et améliorer la traçabilité. Elle utilise Vue.js pour l’interface utilisateur et Node.js pour le back-end.</p>
-            
-            <h3>Technologies Utilisées</h3>
-            <ul>
-                <li>JavaScript (Vue.js, Node.js)</li>
-                <li>Base de données NoSQL</li>
-                <li>Figma pour le design</li>
-                <li>Star UML pour la modélisation</li>
-            </ul>
-
-            <h3>Captures d'écran</h3>
-            <img src="images/imgsnel1.png" alt="Capture d'écran de l'application" class="project-image">
-            <img src="images/imgsnel2.png" alt="Capture d'écran de l'application" class="project-image">
-            <h3>Vidéo Démonstration</h3>
-            <video width="100%" height="auto" controls>
-                <source src="images/videos/snelvid.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la vidéo.
-            </video>
+        <section id="apropos">
+            <h2>À propos</h2>
+            <p>Depuis maintenant 5 ans, je me suis pris de passion pour le développement web et l'UX Design. Mes compétences diverses me permettent de proposer le développement de sites web sur mesure, de leur conception à leur mise en ligne.</p>
         </section>
 
-        <section id="projet-ecommerce">
-            <h2>Projet : Application de Vente en Ligne avec Python</h2>
-            <p>Cette application permet de gérer un système de vente en ligne avec diverses fonctionnalités, y compris la gestion des utilisateurs et des produits.</p>
-            <h3>Technologies Utilisées</h3>
-            <ul>
-                <li>Python (Django)</li>
-                <li>HTML, CSS, JavaScript</li>
-            </ul>
-            <h3>Captures d'écran</h3>
-            <img src="images/imgpy.PNG" alt="Capture d'écran de l'application de vente en ligne" class="project-image">
-        </section>
+        <section id="realisation">
+            <h2>Mes Réalisations</h2>
 
-        <section id="projet-site-web">
-            <h2>Projet : Site Web en JavaScript</h2>
-            <p>Un site web dynamique développé avec JavaScript, offrant des fonctionnalités interactives et une interface utilisateur conviviale.</p>
-            <h3>Technologies Utilisées</h3>
-            <ul>
-                <li>JavaScript</li>
-                <li>HTML, CSS</li>
-            </ul>
-            <h3>Captures d'écran</h3>
-            <img src="images/siteweb.png" alt="Capture d'écran du site web" class="project-image">
-            <h3>Vidéo Démonstration</h3>
-            <video width="100%" height="auto" controls>
-                <source src="images/videos/webvid.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la vidéo.
-            </video>
+            <div class="project">
+                <h3>Projet : Digitalisation des Documents pour la SNEL</h3>
+                <p>Ce projet visait à créer une application de gestion électronique des documents (GED) pour la Société Nationale d'Électricité (SNEL) en RDC.</p>
+                <h4>Description du Projet</h4>
+                <p>L’application a été développée pour digitaliser et sécuriser les documents d’entreprise, simplifier leur accès et leur stockage, et améliorer la traçabilité. Elle utilise Vue.js pour l’interface utilisateur et Node.js pour le back-end.</p>
+                
+                <h4>Technologies Utilisées</h4>
+                <ul>
+                    <li>JavaScript (Vue.js, Node.js)</li>
+                    <li>Base de données NoSQL</li>
+                    <li>Figma pour le design</li>
+                    <li>Star UML pour la modélisation</li>
+                </ul>
+
+                <h4>Captures d'écran</h4>
+                <img src="images/imgsnel1.png" alt="Capture d'écran de l'application" class="project-image">
+                <img src="images/imgsnel2.png" alt="Capture d'écran de l'application" class="project-image">
+                <h4>Vidéo Démonstration</h4>
+                <video controls>
+                    <source src="images/videos/snelvid.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+
+            <div class="project">
+                <h3>Projet : Application de Vente en Ligne avec Python</h3>
+                <p>Cette application permet de gérer un système de vente en ligne avec diverses fonctionnalités, y compris la gestion des utilisateurs et des produits.</p>
+                <h4>Technologies Utilisées</h4>
+                <ul>
+                    <li>Python (Django)</li>
+                    <li>HTML, CSS, JavaScript</li>
+                </ul>
+                <h4>Captures d'écran</h4>
+                <img src="images/imgpy.PNG" alt="Capture d'écran de l'application de vente en ligne" class="project-image">
+            </div>
+
+            <div class="project">
+                <h3>Projet : Site Web en JavaScript</h3>
+                <p>Un site web dynamique développé avec JavaScript, offrant des fonctionnalités interactives et une interface utilisateur conviviale.</p>
+                <h4>Technologies Utilisées</h4>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>HTML, CSS</li>
+                </ul>
+                <h4>Captures d'écran</h4>
+                <img src="images/siteweb.png" alt="Capture d'écran du site web" class="project-image">
+                <h4>Vidéo Démonstration</h4>
+                <video controls>
+                    <source src="images/videos/webvid.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
         </section>
     </main>
 
