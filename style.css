@@ -17,16 +17,16 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center; /* Alignement vertical centré */
-    justify-content: flex-start; /* Justifier à gauche */
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes si nécessaire */
 }
 
 .profile-photo {
-    width: 80px; /* Taille réduite de la photo de profil */
+    width: 100px; /* Ajuster la taille de la photo */
     height: auto;
     border-radius: 50%;
-    margin-right: 15px; /* Espacement entre la photo et le texte */
+    margin-right: 20px;
 }
 
 .header-text {
@@ -75,6 +75,27 @@ section {
 }
 
 .project-image {
-    width: calc(25% - 10px); /* Ajustement pour que les images soient plus petites sur PC */
+    width: calc(50% - 10px); /* Deux images côte à côte avec espace */
     height: auto;
-    border-radius: 5p
+    border-radius: 5px;
+    margin: 5px; /* Espacement autour des images */
+    transition: transform 0.3s; /* Ajout d'un effet sur les images */
+    display: inline-block; /* Permet d'afficher côte à côte */
+}
+
+.project-image:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+video {
+    width: 100%; /* Largeur complète mais ajustée dans les media queries */
+    max-width: 300px; /* Largeur maximale pour les vidéos */
+    height: auto;
+    margin: 10px auto; /* Centrer avec une marge */
+    display: block; /* Permet de centrer */
+}
+
+/* Media Queries pour Responsivité */
+@media (min-width: 768px) {
+    .header-content {
+      
